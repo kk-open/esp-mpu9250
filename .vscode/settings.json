@@ -1,5 +1,9 @@
 {
     "idf.adapterTargetName": "esp32",
     "idf.flashType": "UART",
-    "idf.port": "/dev/ttyUSB0"
+    "idf.port": "/dev/ttyACM0",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp_ftdi.cfg",
+        "target/esp32s3.cfg"
+    ]
 }
