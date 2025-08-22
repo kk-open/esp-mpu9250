@@ -1,9 +1,15 @@
 {
-    "idf.adapterTargetName": "esp32",
-    "idf.flashType": "UART",
-    "idf.port": "/dev/ttyACM0",
-    "idf.openOcdConfigs": [
-        "interface/ftdi/esp_ftdi.cfg",
-        "target/esp32s3.cfg"
-    ]
+  "idf.adapterTargetName": "esp32",
+  "idf.flashType": "UART",
+  "idf.port": "/dev/ttyACM0",
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp_ftdi.cfg",
+    "target/esp32s3.cfg"
+  ],
+  "clangd.path": "/home/bobo/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=/home/bobo/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
+    "--compile-commands-dir=/home/bobo/skyris/esp-mpu9250/build"
+  ]
 }

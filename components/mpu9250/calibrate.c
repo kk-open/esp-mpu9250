@@ -277,7 +277,7 @@ void calibrate_mag(void)
       .y = -9.9e99,
       .z = -9.9e99};
 
-  const int NUM_MAG_READS = 2000;
+  const int NUM_MAG_READS = 10000;
 
   init_imu();
 
